@@ -1,0 +1,363 @@
+#helloSpace {
+  margin-top: 4em;
+}
+
+#proyects {
+  margin-top: 10%;
+}
+
+.helloAndKnowledgePhrase {
+  position: relative;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #0011ff;
+}
+
+.myNameAndFrontEndPhrase {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+.graphicDesignPhrase {
+  position: relative;
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 12rem;
+  color: #0011ff;
+}
+
+#knowledgePhrase {
+  position: relative;
+  float: right;
+  top: 20%;
+  overflow: hidden;
+  bottom: 7em;
+  right: 8em;
+}
+
+.arrowProyectMain {
+  position: relative;
+  float: right;
+  top: 2.4em;
+  left: 30%;
+  width: 2rem;
+  margin-left: 1.5%;
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+
+#proyects {
+  margin-top: 13.4%;
+}
+
+.lookProyectText {
+  position: relative;
+  top: 8rem;
+  float: right;
+  left: 30%;
+  color: #ADB6BA; 
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+#myhistory {
+  position: relative;
+  width: 50%;
+  /* float: right; */
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+  float: right;
+}
+
+.titleExperience {
+  font-size: 2rem;
+}
+
+.textBoxHistory {
+  margin-bottom: 3%;
+  margin-top: 1%;
+  font-size: 1.2rem;
+}
+
+.cvPDF {
+  position: relative;
+  font-size: 1rem;
+  color: #0011ff;
+  font-weight: 400;
+}
+
+#arrowCV {
+  position: relative;
+  display: inline-block;
+  float: none;
+  margin-left: 30px;
+  margin-top: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.cvPDF p {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30%;
+}
+
+.phraseContact, h3 {
+  color: #0011ff;
+  font-style: italic;
+  text-align: center;
+}
+
+.contactEmail {
+  margin-top: 5%;
+}
+
+h3 {
+  font-style: normal;
+  color: #0011ff;
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.imageExampleProyect {
+  position: relative;
+  width: 49%;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+
+.phraseContact {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1920px){
+  .arrowProyectMain {
+    top: 2.4em;
+  }
+  
+  .lookProyectText {
+    top: 8rem;
+  }
+}
+
+@media screen and (max-width: 1600px){
+  .arrowProyectMain {
+    top: -.1em;
+  }
+  
+  .lookProyectText {
+    top: -.8em;
+  }
+
+  .graphicDesignPhrase {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+
+  #knowledgePhrase {
+    position: relative;
+    float: left;
+    bottom: 3em;
+    bottom: 0;
+    right: 0;
+  }
+
+  .arrowProyectMain {
+    top: 1.6em;
+  }
+  
+  .lookProyectText {
+    top: 5em;
+  }
+  
+  .btnMenu {
+    top: 5%;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .arrowProyectMain {
+    display: none;
+  }
+  
+  .lookProyectText {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #helloSpace {
+    margin-top: 14%;
+  }
+}
+
+@media screen and (max-width: 1086px) {
+  .proyectsTitle, .historyTitle {
+    font-size: 4.5rem;
+  }
+
+  #myhistory {
+    width: 90%;
+    padding-right: 10%;
+  }
+
+  .cvPDF p {
+    margin-bottom: 15%;
+  }
+
+  .btnMenu {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.1rem;
+  }
+
+  .proyect {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .proyectsTitle, .historyTitle {
+    font-size: 4rem;
+  }
+
+  .titlesProyects {
+    font-size: 2.5rem;
+  }
+
+  .titleExperience {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .graphicDesignPhrase {
+    font-size: 5rem;
+    line-height: 5.7rem;
+  }
+
+  .helloAndKnowledgePhrase {
+    font-size: 1rem;
+    }
+
+  .myNameAndFrontEndPhrase {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .titlesProyects {
+    font-size: 2.5rem;
+  }
+
+  .proyectsTitle, .historyTitle {
+    font-size: 4rem;
+  }
+
+  .contactEmail {
+    font-size: 2rem;
+  }
+
+  .phraseContact {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titlesProyects {
+    font-size: 2rem;
+  }
+
+  .arrowProyect {
+    margin-top: 2%;
+  }
+
+  .proyectsTitle, .historyTitle {
+    font-size: 3.5rem;
+  }
+
+  .contactEmail {
+    font-size: 1.5rem;
+  }
+
+  .textBoxHistory {
+    font-size: 1rem;
+  }
+
+  .imageExampleProyect {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .graphicDesignPhrase {
+    font-size: 4rem;
+    line-height: 4.7rem;
+  }
+
+  .helloAndKnowledgePhrase {
+    font-size: 1rem;
+    }
+
+  .myNameAndFrontEndPhrase {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .titlesProyects {
+    font-size: 1.5rem;
+  }
+
+  .arrowProyect {
+    margin-top: .5%;
+  }
+
+  .proyectsTitle, .historyTitle {
+    font-size: 2.5rem;
+  }
+
+  #arrowCV {
+    width: 1.5rem;
+    margin-left: 15px;
+  }
+
+  .proyect {
+    width: 95%;
+  }
+
+  .btnMenu {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+
+  .graphicDesignPhrase {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+
+  .helloAndKnowledgePhrase {
+    font-size: .7rem;
+    }
+
+  .myNameAndFrontEndPhrase {
+    font-size: 1rem;
+  }
+
+  #arrowCV {
+    display: none;   
+  }
+
+  .footerYear {
+    font-size: .7rem;
+  }
+}

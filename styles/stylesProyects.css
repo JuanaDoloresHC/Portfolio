@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  width: 80%;
+  max-width: 1300px;
+  margin: 5% auto;
+  overflow: hidden;
+}
+
+.main section {
+  position: relative;
+}
+
+.main section:first-child {
+  margin-top: 0;
+}
+
+.btnMenu { 
+  position: fixed;
+  top: 10%;
+  right: 100px;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  background-color:#000000; 
+  color: #f4f4f5;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all .4s ease-out;
+  z-index: 2;
+  cursor: pointer;
+  transform:rotate(-90deg);
+}
+
+.btnMenu:hover {
+  transform:rotate(-360deg);
+  width: 7rem;
+  height: 7rem; 
+  transition: all .2 ease-out;
+  cursor: pointer;
+  background-color: #0011ff;
+}
+
+.menu-container {
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  background-color: #0011ff;
+  z-index: 3;
+  transition: left .4s ease-in-out;
+}
+
+.menu-container.displayed {
+  left: 40%;
+}
+
+.menu-container .close-menu-button {
+  position: absolute;
+  top: 14%;
+  right: 135px;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.menu-container ul {
+  position: absolute;
+  min-width: 140px;
+  list-style: none;
+  padding: 15% 0 0% 15%; 
+}
+
+.menu-container ul li {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.close-menu-button {
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #f4f4f5;  
+}
+
+a::before {
+  content: ’’;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+h2 {
+  margin-bottom: 2%;
+}
+
+ul {
+  z-index: 1;
+}
+
+ol {
+  list-style: none;
+  color: #ADB6BA; 
+  padding-top: 15%;
+}
+
+h1, h2 {
+  margin-top: 5%;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  color: #0011ff;
+}
+
+.textBox {
+  width: 50%;
+  margin-bottom: 5%;
+  font-size: 1.1rem;
+}
+
+span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.imageProyect {
+  position: relative;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.imageProyectSlider{
+  position: relative;
+  width: 69%;
+  margin-right: 1%;
+  margin-top: .5%; 
+  float: left;
+  overflow: hidden;
+}
+
+.imageProyectFifty{
+  position: relative;
+  margin-top: .5%; 
+  height: auto;
+  width: 30%;
+  float: right;
+}
+
+.imageProyectSlider img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.subasnetSlider {
+  display: none;
+}
+
+.project-navigation {
+  position: fixed;
+  right: 132px;
+  bottom: 5%;
+  z-index: 2;
+  transition: all .4s ease-out;
+}
+
+.arrowRight, .arrowLeft {
+  position: relative;
+  display: block;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.arrowRight {
+  margin-bottom: 2rem;
+}
+
+#titleProyects {
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  background-color: #0011ff;
+}
+
+hr {
+  width: 100%;
+  opacity: 25%;
+}
+
+.firstLine, .secondLine {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+
+.titlesProyects {
+  position: relative;
+  float: left;
+  font-size: 3rem;
+  color: #0011ff;
+  font-weight: 400;
+  margin-bottom: 1.5%;
+}
+
+.btnProyect {
+  position: relative;
+  float: left;
+  margin: 1.4rem 0 0 2rem;
+  border: 1px solid #0011ff;;
+  border-radius: 50px;
+  padding: .1rem 3rem .1rem 3rem;
+}
+
+.arrowProyect {
+  position: relative;
+  float: right;
+  margin-top: 1.3rem;
+  width: 2rem;
+  padding-right: 2.5rem;
+}
+
+.footer {
+  position: relative;
+  width: 80%;
+  height: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer p {
+  position: relative;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #707070;
+  float: right;
+}
+
+.footerYear {
+  margin-left: 50px;
+}
+
+.sectionProyects, .titlesProyects {
+  color: #000000;
+}
+
+@media screen and (max-width: 1734px) {
+  .close-menu-button {
+    right: 200px;
+  }
+
+  .menu-container ul {
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 1720px) {
+  .project-navigation {
+    right: 82px;
+  } 
+  
+  .btnMenu, .menu-container {
+    right: 50px;
+  }
+
+  .menu-container ul {
+    padding-top: 25%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .project-navigation {
+    right: 60px;
+  } 
+  
+  .btnMenu, .menu-container {
+    right: 28px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project-navigation {
+    right: 54px;
+  } 
+  
+  .btnMenu, .menu-container {
+    right: 22px;
+  }
+
+  span {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .project-navigation {
+    right: 48px;
+  } 
+  
+  .btnMenu, .menu-container {
+    right: 16px;
+  }
+
+  .menu-container ul {
+    padding-top: 30%;
+  }
+
+  .btnProyect {
+    display: none;
+  } 
+
+  .textBox {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1074px) {
+  .project-navigation {
+    right: 42px;
+  } 
+  
+  .btnMenu, .menu-container {
+    right: 10px;
+  }
+
+  .menu-container ul {
+    padding-top: 35%;
+  }
+
+  .imageProyectFifty {
+    display: none;
+  }
+
+  .imageProyectSlider {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .project-navigation {
+    display: none;
+  }
+
+  #closeButton {
+   top: 5%;
+   right: 10%;
+   width: 2rem;
+   height: 2rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  h1, h2 {
+    font-size: 4rem;
+  }
+
+  .titlesProyects {
+    font-size: 2.5rem;
+  }
+
+  #listMenu li a{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1, h2 {
+    font-size: 3.5rem;
+  }
+
+  .titlesProyects {
+    font-size: 2rem;
+  }
+
+  .arrowProyect {
+    margin-top: 2%;
+  }
+
+  #listMenu li a {
+    font-size: 2rem;
+  }
+
+  #closeButton {
+    top: 5%;
+    right: 10%;
+    width: 1.5rem;
+    height: 1.5rem;
+   }
+}
+
+@media screen and (max-width: 520px) {
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+
+  .titlesProyects {
+    font-size: 1.5rem;
+  }
+
+  .arrowProyect {
+    margin-top: .5%;
+  }
+
+  ol {
+    font-size: .8rem;
+  }
+
+  #listMenu li a {
+    font-size: 1.5rem;
+  }
+}

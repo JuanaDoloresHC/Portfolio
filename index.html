@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juana Hernández - Portfolio</title>
+  <link href="./styles/stylesProyects.css" rel="stylesheet" type="text/css">
+  <link href="./styles/home.css" rel="stylesheet" type="text/css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="./images/icons/iconFavicon.png">
+</head>
+<body>
+  <header class="header" id="home">
+    <nav>
+      <button class="btnMenu">Menú</button>
+    </nav>
+  </header>
+
+    <div class="menu-container">
+      <img class="close-menu-button" id="closeButton" src="./images/icons/closeButton.png" alt="Icono para cerrar el menú">
+      <ul id="listMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#myhistory">Mi historia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+    
+    <main class="main">
+      <section>
+        <div>
+          <p class="helloAndKnowledgePhrase" id="helloSpace">Hola, soy <span class="myNameAndFrontEndPhrase">Juana.</span></p>
+          <p class="graphicDesignPhrase">diseña-<br>dora <br> gráfica</p>
+          <p class="helloAndKnowledgePhrase" id="knowledgePhrase">con conocimientos de <span class="myNameAndFrontEndPhrase">Front-end.</span></p>
+        </div>
+        <a href="#proyects"><img class="arrowProyectMain" src="./images/icons/arrowRigthProyect.png" alt="Flecha que indica ir a los proyectos"></a>  
+        <a href="#proyects"><p class="lookProyectText">Ver proyectos</p></a>     
+      </section>
+      
+
+      <section id="proyects">
+        <h2 class="proyectsTitle sectionProyects" id="proyects">Proyectos</h2>
+        <div class="proyect">
+          <hr class="firstLine">
+          <a href="./proyects/proyectSafru.html"><h3 class="titlesProyects">Safru</h3></a>
+          <div class="btnProyect">
+            <p>Página web</p>
+          </div>
+          <a href="./proyects/proyectSafru.html"><img class="arrowProyect" src="./images/icons/arrowRigthProyect.png" alt="Flecha que indica ir al proyecto de Safru"></a>
+          <hr class="secondLine">
+        </div>
+
+        <div class="proyect">
+          <a href="./proyects/proyectSubasnet.html"><h3 class="titlesProyects">Subasnet</h3></a>
+          <div class="btnProyect">
+            <p>Branding</p>
+          </div>
+          <div class="btnProyect">
+            <p>Tipografía</p>
+          </div>
+          <div class="btnProyect">
+            <p>Packaging</p>
+          </div>
+          <a href="./proyects/proyectSubasnet.html"><img class="arrowProyect" src="./images/icons/arrowRigthProyect.png" alt="Flecha que indica ir al proyecto de Subasnet"></a>
+          <hr class="secondLine">
+        </div>
+      </section>
+
+      <section>
+        <img class="imageExampleProyect" src="./images/safruProyect/safruSreens.jpg" alt="Imagen de diferentes pantallas de la marca Safru">
+        <img class="imageExampleProyect" src="./images/subasnetProyect/businessCard.jpg" alt="Imagen de las tarjetas de visita de la marca Subasnet">
+      </section>
+
+      <section id="myhistory">
+        <ol>
+          <li>Diseñadora gráfica</li>
+          <li>Programadora Front-end</li>
+        </ol>
+        <h1 class="historyTitle">Mi historia</h1>
+        <p class="textBoxHistory">Soy de una pequeña isla de Canarias situada en España. Aprendí a diseñar para impresión en mis comienzos. Viajé a la Península para terminar mis estudios artísticos y centrarme en el diseño web.</p> 
+        <p class="textBoxHistory">Tengo un Ciclo Formativo de Grado Superior en Gráfica Impresa, un Grado en Bellas Artes y una Formación Profesional en Desarrollo de Aplicaciones con Tecnologías Web. En estos días me encuentro terminando el programa de Samsung DesArrolladoras.</p>
+        <p class="textBoxHistory">En lo personal, me encanta diseñar y programar páginas webs. La lectura, la playa y el senderismo ocupan mi tiempo de ocio.</p>
+         
+        <h2 class="titleExperience">Experiencia profesional</h2>
+        <p class="textBoxHistory">Estuve en el Decanato de la Facultad de Bellas Artes de Granada como diseñadora gráfica para impresión, página web, redes sociales y sala expositiva. He estado como experiencia profesional en MCB Soluciones y Cúrcuma Estudio.</p>
+        
+        <a class="cvPDF" href="./images/JuanaHernandezCV.pdf" target="_blank">
+          <p>Descarga mi Currículum Vítae</p>
+          <img class="arrowProyect" id="arrowCV" src="./images/icons/arrowRigthCV.png" alt="Flecha que indica ir al Currículum Vítae">
+        </a>
+      </section>
+
+      <section id="contact">
+        <p class="phraseContact">Siéntete libre de contactarme. Estaré encantada <br>de hablar de nuevos proyectos.</p>
+        
+        <a href="mailto:juana.hernandezcab@gmail.com?Subject=Contacto%20por%20encargo%20de%20proyecto">
+          <h3 class="contactEmail">Contáctame por email</h3>
+        </a>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <p class="footerYear">©2022</p>
+      <p class="footerDeveloper">Diseño y desarrollo web por juana</p>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
